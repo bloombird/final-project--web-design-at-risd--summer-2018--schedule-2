@@ -22,7 +22,7 @@ body {
   height: 100%; }
 
 h1, h2, h3, h4 {
-  font-size: 700; }
+  font-weight: 700; }
 
 h1 {
   font-size: 40px;
@@ -33,5 +33,13 @@ h1 {
   text-align: center;
   white-space: nowrap;
   transform: translate(-50%, -50%); }
+
+#startme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  width: 467px;
+  height: 439px; }
 
 /*# sourceMappingURL=style.css.map */
