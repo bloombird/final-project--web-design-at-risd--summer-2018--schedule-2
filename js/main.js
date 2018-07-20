@@ -61,7 +61,9 @@
             .fromTo($eyeballRight, 0.4, {scaleY: 1, transformOrigin: 'center center'}, { scaleY: 0.8, ease: Power4.easeInOut}, '-=0.4')
             .fromTo($head, 0.4, {rotation: 0, transformOrigin: '60% 65%'}, { rotation: 3, ease: Power4.easeInOut}, '-=0.4')
             .add('zoom-out')
-            .to($girl, 1, {x: '0%', scale:1, ease: Power4.easeInOut}, 'zoom-out+=1');
+            .to($girl, 1, {x: '0%', scale:1, ease: Power4.easeInOut}, 'zoom-out+=1')
+            .to($h1, 0.5, {autoAlpha: 0}, 'zoom-out+=1')
+            .to($MainMask, 1, {attr: {x:831}, ease: Power4.easeInOut}, 'zoom-out+=1')
             ;
 
 
