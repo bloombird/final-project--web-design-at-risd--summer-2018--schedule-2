@@ -68,11 +68,10 @@ section {
 nav ul li{
    line-height: 30px;
    list-style-type: none;
-
 }
 
 li a{
-      text-decoration: none;
+   text-decoration: none;
 }
 
 a:link {
@@ -92,4 +91,8 @@ a:hover {
 /* selected link */
 a:active {
     color: #eb9f9f;
+}
+
+.active{
+   color: #eb9f9f !important;
 }
