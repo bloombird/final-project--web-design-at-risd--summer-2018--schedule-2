@@ -34,12 +34,18 @@ h1 {
   white-space: nowrap;
   transform: translate(-50%, -50%); }
 
-#startme {
+#animation {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -54%);
-  width: 467px;
-  height: 439px; }
+  width: 1050px;
+  height: 987px; }
+
+#stage,
+#girl,
+h1,
+#plant {
+  visibility: hidden; }
 
 /*# sourceMappingURL=style.css.map */

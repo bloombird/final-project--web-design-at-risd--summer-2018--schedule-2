@@ -14,12 +14,40 @@
 <body>
 
    <div id="start_anmiation">
+
       <h1>Hi, my name is Sophie!</h1>
 
 
-      <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <svg version="1.1" id="animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 1957.8 1138.8" style="enable-background:new 0 0 1957.8 1138.8;" xml:space="preserve">
 
+          <defs>
+             <clipPath id="cut-off-stage">
+               <rect id="MainMask" x="865.1" y="243.3" class="st7" width="668.5" height="820.1"/>
+             </clipPath>
+             <clipPath id="cut-off-stem">
+               <rect id="stemmask" x="1150.1" y="296.6" class="st12" width="57.1" height="453.1" />
+             </clipPath>
+             <clipPath id="cut-off-leaf-1">
+              <rect id="leaf1insideMask" x="1009.8" y="573.8" class="st12" width="171.8" height="189.6"/>
+             </clipPath>
+             <clipPath id="cut-off-leaf-2">
+             <rect id="leaf2insideMask" x="1183.8" y="536.9" class="st12" width="150.1" height="184.6"/>
+             </clipPath>
+             <clipPath id="cut-off-leaf-3">
+                <rect id="leaf3insideMask" x="1031.4" y="458.9" class="st12" width="150.1" height="184.6"/>
+             </clipPath>
+             <clipPath id="cut-off-leaf-4">
+                <rect id="leaf4insideMask" x="1175.7" y="425.5" class="st12" width="140.6" height="173"/>
+             </clipPath>
+             <clipPath id="cut-off-leaf-5">
+                <rect id="leaf5insideMask" x="1059.3" y="360.3" class="st12" width="117.7" height="144.8"/>
+             </clipPath>
+             <clipPath id="cut-off-leaf-6">
+                <rect id="leaf6insideMask" x="1171.9" y="328.9" class="st12" width="115.6" height="142.2"/>
+             </clipPath>
+
+          </defs>
 
       <style type="text/css">
       	.st0{fill:#F1BBBA;}
@@ -35,7 +63,7 @@
       	.st10{fill:none;stroke:#297954;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
       	.st11{fill:#297954;}
       	.st12{fill:#297954;}
-      	.st13{fill:none;}
+      	.st13{fill:#fcf5e3;}
       </style>
       <g id="girl">
       	<g id="body">
@@ -119,7 +147,7 @@
       		<path class="st3" d="M597.9,372c1-4,6.7-13.2,21-14c6.6-0.3,12.4,2,16,8"/>
       		<path class="st8" d="M643.6,434.4c4.2-2.5,11.8-2.5,17.7,0c5.9-3.4,18.6,0,18.6,0s-6.8,11-21.1,11
       			C646.2,443.7,643.6,434.4,643.6,434.4z"/>
-      		<path class="st3" d="M642.4,433.1c11.8,10.1,29.6,5.1,38,0"/>
+      		<path id="mouthStroke" class="st3" d="M642.4,433.1c11.8,10.1,29.6,5.1,38,0"/>
       		<path class="st4" d="M641.9,340c-6-7-19.5-7-32-4"/>
       		<path class="st4" d="M682.9,341c10-6,18.9-8.6,33-7c18,2,28,13,28,13"/>
       		<ellipse class="st8" cx="709.4" cy="407" rx="12" ry="10.5"/>
@@ -139,111 +167,80 @@
       		<path class="st3" d="M589.9,418c3,16,15,28.7,30,39c37.5,23.9,113,13,120-52"/>
       	</g>
       </g>
-      <g id="plant">
-      	<path class="st11" d="M1317.7,538.3"/>
-      	<path class="st11" d="M1211.5,619.6"/>
 
-         <defs>
-            <clipPath id="cut-off-stem">
-              <rect id="stemmask" x="1150.1" y="296.6" class="st12" width="57.1" height="453.1" />
-           </clipPath>
-         </defs>
-
-      	<g id="stem">
-      		<path id="stem" class="st12" clip-path="url(#cut-off-stem)" d="M1189.1,750.5l-1.8-38.4l-3.7-69.4V538.6c0,0-5.5-98.6-5.5-118.7c0-20.1,9.1-74.9-5.5-111.4
-      			c5.5,29.2-1.8,93.1-5.5,107.8c-3.7,14.6,5.5,104.1,3.7,116.9c-1.8,12.8,0,96.8,0,105.9c0,9.1,3.7,109.6,3.7,109.6L1189.1,750.5z"
-      			/>
-
-      	</g>
-
-      	<g id="vase">
-      		<rect x="1143.6" y="749.5" class="st7" width="72" height="20.3"/>
-      		<rect x="1143.6" y="779.1" class="st7" width="72" height="20.3"/>
-      		<rect x="1143.6" y="808.7" class="st7" width="72" height="20.3"/>
-      		<rect x="1143.6" y="838.2" class="st7" width="72" height="20.3"/>
-      	</g>
+      <g id="stage" clip-path="url(#cut-off-stage)">
+         <g id="plant">
+         	<path class="st11" d="M1317.7,538.3"/>
+         	<path class="st11" d="M1211.5,619.6"/>
 
 
-         <defs>
-            <clipPath id="cut-off-leaf-1">
-              <rect id="leaf1insideMask" x="1009.8" y="573.8" class="st12" width="171.8" height="189.6"/>
-           </clipPath>
-         </defs>
-         <defs>
-            <clipPath id="cut-off-leaf-2">
-              <rect id="leaf2insideMask" x="1183.8" y="536.9" class="st12" width="150.1" height="184.6"/>
-           </clipPath>
-         </defs>
-         <defs>
-            <clipPath id="cut-off-leaf-3">
-               <rect id="leaf3insideMask" x="1031.4" y="458.9" class="st12" width="150.1" height="184.6"/>
-           </clipPath>
-         </defs>
-         <defs>
-            <clipPath id="cut-off-leaf-4">
-               <rect id="leaf4insideMask" x="1175.7" y="425.5" class="st12" width="140.6" height="173"/>
-           </clipPath>
-         </defs>
-         <defs>
-            <clipPath id="cut-off-leaf-5">
-               <rect id="leaf5insideMask" x="1059.3" y="360.3" class="st12" width="117.7" height="144.8"/>
-           </clipPath>
-         </defs>
-         <defs>
-            <clipPath id="cut-off-leaf-6">
-               <rect id="leaf6insideMask" x="1171.9" y="328.9" class="st12" width="115.6" height="142.2"/>
-           </clipPath>
-         </defs>
 
-      	<g id="leaf-1">
 
-      		<path id="leaf1inside" clip-path="url(#cut-off-leaf-1)" class="st12" d="M1174.5,722.4c-20.4-18.7-18.8-39.4-22.2-42.8s-5.2-31-51.6-50
-      			c-46.4-19-86.2-15.5-86.2-15.5s67.1,89.6,134.4,96.4c12.1,8.6,27.5,20.7,27.5,20.7L1174.5,722.4z"/>
+         	<g id="mainstem">
+         		<path id="stem" class="st12" clip-path="url(#cut-off-stem)" d="M1189.1,750.5l-1.8-38.4l-3.7-69.4V538.6c0,0-5.5-98.6-5.5-118.7c0-20.1,9.1-74.9-5.5-111.4
+         			c5.5,29.2-1.8,93.1-5.5,107.8c-3.7,14.6,5.5,104.1,3.7,116.9c-1.8,12.8,0,96.8,0,105.9c0,9.1,3.7,109.6,3.7,109.6L1189.1,750.5z"
+         			/>
 
-      		<circle id="fruit1" class="st7" cx="1007.8" cy="611.8" r="8.3"/>
-      	</g>
-      	<g id="leaf-2">
-      		<path id="leaf2inside" clip-path="url(#cut-off-leaf-2)" class="st12" d="M1181.7,698.2c0,0,14.4-11.2,25.7-19.3c62.7-6.4,125.2-89.9,125.2-89.9s-37-3.3-80.3,14.4
-      			c-43.3,17.7-44.9,43.4-48.1,46.6c-3.2,3.2-1.7,22.5-20.7,39.9L1181.7,698.2z"/>
+         	</g>
 
-      		<circle id="fruit2" class="st7" cx="1338.9" cy="586.9" r="7.7"/>
-      	</g>
-      	<g id="leaf-3">
+         	<g id="vase">
+         		<rect x="1143.6" y="749.5" class="st7" width="72" height="20.3"/>
+         		<rect x="1143.6" y="779.1" class="st7" width="72" height="20.3"/>
+         		<rect x="1143.6" y="808.7" class="st7" width="72" height="20.3"/>
+         		<rect x="1143.6" y="838.2" class="st7" width="72" height="20.3"/>
+         	</g>
 
-      		<path id="leaf3inside" class="st12" clip-path="url(#cut-off-leaf-3)" d="M1174.7,595.1c-17.3-15.8-15.9-33.3-18.8-36.2c-2.9-2.9-4.4-26.2-43.7-42.3
-      			c-39.3-16.1-72.9-13.1-72.9-13.1s56.8,75.8,113.7,81.6c10.2,7.3,23.3,17.5,23.3,17.5L1174.7,595.1z"/>
+         	<g id="leaf-1">
 
-      		<circle id="fruit3" class="st7" cx="1033.6" cy="501.5" r="7"/>
-      	</g>
-      	<g id="leaf-4">
-      		<path id="leaf4inside" class="st12" clip-path="url(#cut-off-leaf-4)" d="M1180.6,560.1c0,0,12.3-9.6,21.8-16.4c53.3-5.4,106.5-76.4,106.5-76.4s-31.5-2.8-68.3,12.3
-      			c-36.8,15.1-38.2,36.9-40.9,39.6s-1.4,19.1-17.6,33.9L1180.6,560.1z"/>
+         		<path id="leaf1inside" clip-path="url(#cut-off-leaf-1)" class="st12" d="M1174.5,722.4c-20.4-18.7-18.8-39.4-22.2-42.8s-5.2-31-51.6-50
+         			c-46.4-19-86.2-15.5-86.2-15.5s67.1,89.6,134.4,96.4c12.1,8.6,27.5,20.7,27.5,20.7L1174.5,722.4z"/>
 
-      		<circle id="fruit4" class="st7" cx="1314.3" cy="465.4" r="6.6"/>
-      	</g>
-      	<g id="leaf-5">
+         		<circle id="fruit1" class="st7" cx="1007.8" cy="611.8" r="8.3"/>
+         	</g>
+         	<g id="leaf-2">
+         		<path id="leaf2inside" clip-path="url(#cut-off-leaf-2)" class="st12" d="M1181.7,698.2c0,0,14.4-11.2,25.7-19.3c62.7-6.4,125.2-89.9,125.2-89.9s-37-3.3-80.3,14.4
+         			c-43.3,17.7-44.9,43.4-48.1,46.6c-3.2,3.2-1.7,22.5-20.7,39.9L1181.7,698.2z"/>
 
-      		<path id="leaf5inside" class="st12" clip-path="url(#cut-off-leaf-5)" d="M1171.7,467.1c-13.6-12.4-12.5-26.1-14.7-28.4s-3.5-20.6-34.3-33.2
-      			c-30.8-12.6-57.2-10.3-57.2-10.3s44.6,59.5,89.2,64c8,5.7,18.3,13.7,18.3,13.7L1171.7,467.1z"/>
+         		<circle id="fruit2" class="st7" cx="1338.9" cy="586.9" r="7.7"/>
+         	</g>
+         	<g id="leaf-3">
 
-      		<circle id="fruit5" class="st7" cx="1061" cy="393.6" r="5.5"/>
-      	</g>
-      	<g id="leave-6">
-      		<path id="leaf6inside" class="st12" clip-path="url(#cut-off-leaf-6)" d="M1175.9,439.5c0,0,10.1-7.9,17.9-13.5c43.8-4.5,87.6-62.8,87.6-62.8s-25.9-2.3-56.1,10.1
-      			c-30.3,12.4-31.4,30.3-33.7,32.6c-2.2,2.2-1.2,15.7-14.5,27.9L1175.9,439.5z"/>
-      		<circle id="fruit6" class="st7" cx="1285.8" cy="361.6" r="5.4"/>
-      	</g>
-      	<g id="circle">
-      		<ellipse class="st5" cx="1184.6" cy="929" rx="223" ry="37.5"/>
-      		<circle class="st6" cx="1094.1" cy="908" r="1.5"/>
-      		<circle class="st6" cx="1048.1" cy="934" r="1.5"/>
-      		<circle class="st6" cx="1131.1" cy="947" r="1.5"/>
-      		<circle class="st6" cx="1172.1" cy="906" r="1.5"/>
-      		<circle class="st6" cx="1220.1" cy="940" r="1.5"/>
-      		<circle class="st6" cx="1322.1" cy="932" r="1.5"/>
-      		<circle class="st6" cx="1262.1" cy="909" r="1.5"/>
-      	</g>
+         		<path id="leaf3inside" class="st12" clip-path="url(#cut-off-leaf-3)" d="M1174.7,595.1c-17.3-15.8-15.9-33.3-18.8-36.2c-2.9-2.9-4.4-26.2-43.7-42.3
+         			c-39.3-16.1-72.9-13.1-72.9-13.1s56.8,75.8,113.7,81.6c10.2,7.3,23.3,17.5,23.3,17.5L1174.7,595.1z"/>
+
+         		<circle id="fruit3" class="st7" cx="1033.6" cy="501.5" r="7"/>
+         	</g>
+         	<g id="leaf-4">
+         		<path id="leaf4inside" class="st12" clip-path="url(#cut-off-leaf-4)" d="M1180.6,560.1c0,0,12.3-9.6,21.8-16.4c53.3-5.4,106.5-76.4,106.5-76.4s-31.5-2.8-68.3,12.3
+         			c-36.8,15.1-38.2,36.9-40.9,39.6s-1.4,19.1-17.6,33.9L1180.6,560.1z"/>
+
+         		<circle id="fruit4" class="st7" cx="1314.3" cy="465.4" r="6.6"/>
+         	</g>
+         	<g id="leaf-5">
+
+         		<path id="leaf5inside" class="st12" clip-path="url(#cut-off-leaf-5)" d="M1171.7,467.1c-13.6-12.4-12.5-26.1-14.7-28.4s-3.5-20.6-34.3-33.2
+         			c-30.8-12.6-57.2-10.3-57.2-10.3s44.6,59.5,89.2,64c8,5.7,18.3,13.7,18.3,13.7L1171.7,467.1z"/>
+
+         		<circle id="fruit5" class="st7" cx="1061" cy="393.6" r="5.5"/>
+         	</g>
+         	<g id="leave-6">
+         		<path id="leaf6inside" class="st12" clip-path="url(#cut-off-leaf-6)" d="M1175.9,439.5c0,0,10.1-7.9,17.9-13.5c43.8-4.5,87.6-62.8,87.6-62.8s-25.9-2.3-56.1,10.1
+         			c-30.3,12.4-31.4,30.3-33.7,32.6c-2.2,2.2-1.2,15.7-14.5,27.9L1175.9,439.5z"/>
+         		<circle id="fruit6" class="st7" cx="1285.8" cy="361.6" r="5.4"/>
+         	</g>
+         	<g id="circle">
+         		<ellipse class="st5" cx="1184.6" cy="929" rx="223" ry="37.5"/>
+         		<circle class="st6" cx="1094.1" cy="908" r="1.5"/>
+         		<circle class="st6" cx="1048.1" cy="934" r="1.5"/>
+         		<circle class="st6" cx="1131.1" cy="947" r="1.5"/>
+         		<circle class="st6" cx="1172.1" cy="906" r="1.5"/>
+         		<circle class="st6" cx="1220.1" cy="940" r="1.5"/>
+         		<circle class="st6" cx="1322.1" cy="932" r="1.5"/>
+         		<circle class="st6" cx="1262.1" cy="909" r="1.5"/>
+         	</g>
+         </g>
       </g>
+
       </svg>
 
 
@@ -255,7 +252,7 @@
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+     <script src="js/TweenMax.min.js"></script>
 
      <script src="js/plugins.js"></script>
      <script src="js/main.js"></script>
@@ -265,7 +262,7 @@
           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
           e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
+          e.src='http://www.google-analytics.com/analytics.js';
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
      </script>
