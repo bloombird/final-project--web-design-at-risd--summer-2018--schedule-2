@@ -60,6 +60,8 @@
             .fromTo($eyeballLeft, 0.4, {scaleY: 1, transformOrigin: 'center center'}, { scaleY: 0.8, ease: Power4.easeInOut}, '-=0.4')
             .fromTo($eyeballRight, 0.4, {scaleY: 1, transformOrigin: 'center center'}, { scaleY: 0.8, ease: Power4.easeInOut}, '-=0.4')
             .fromTo($head, 0.4, {rotation: 0, transformOrigin: '60% 65%'}, { rotation: 3, ease: Power4.easeInOut}, '-=0.4')
+            .add('zoom-out')
+            .to($girl, 1, {x: '0%', scale:1, ease: Power4.easeInOut}, 'zoom-out+=1');
             ;
 
 
