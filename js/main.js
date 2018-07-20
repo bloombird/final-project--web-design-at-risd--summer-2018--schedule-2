@@ -1,6 +1,8 @@
 (function($) {
 
-    var $plant = $('#plant'),
+    var $body = $('body'),
+        $plant = $('#plant'),
+        path = [{x:0, y:80},{x:0, y:-180},{x:0, y:50}],
         $stem = $('#stemmask'),
         $h1 = $('h1'),
         $leafInsideMask01 = $('#leaf1insideMask'),
@@ -19,6 +21,8 @@
         $eyeballLeft = $('#eyeball-left'),
         $eyeballRight = $('#eyeball-right'),
         $head = $('#head'),
+        $vase = $('#vase'),
+        $circle = $('#circle'),
 
         mainTl = new TimelineMax();
 
@@ -27,10 +31,12 @@
         var clearTl = new TimelineMax();
 
         clearTl
-            .set($plant, {x:50, y:80,cscale: 0.5, transformOrigin: 'center center'})
+            .set($plant, {x:50, y:80,scale: 0.5, transformOrigin: 'center center'})
             .set($girl, {autoAlpha: 1, x: '1400%', scale: 1.3, transformOrigin: 'bottom center'})
-            .set($stage, {autoAlpha:0.5})
+            .set($stage, {y: 150, scale:1, autoAlpha:0})
+            .set($vase, {scale:1.5, autoAlpha:0})
             .set($MainMask, {attr: {x: 1458}})
+
 
             //leaf
             .set($leafInsideMask01, {attr: {y: 730}})
@@ -64,6 +70,23 @@
             .to($girl, 1, {x: '0%', scale:1, ease: Power4.easeInOut}, 'zoom-out+=1')
             .to($h1, 0.5, {autoAlpha: 0}, 'zoom-out+=1')
             .to($MainMask, 1, {attr: {x:831}, ease: Power4.easeInOut}, 'zoom-out+=1')
+            .set($body, {className: '+=is-active'}, 'zoom-out+=1')
+            .set($h1, {y:'-=100px', x:'+=250px', text: "I'm a freelance designer."})
+            .fromTo($head, 0.4, {rotation: 0, transformOrigin: '60% 65%'}, { rotation: -1, ease: Power4.easeInOut}, '-=0.4')
+            .add('text-in')
+            .to($h1, 0.3, {y: '+=20px', autoAlpha: 1, ease:Power4.easeInOut}, 'text-in')
+            .to($h1, 0.2, {y: '+=20px', autoAlpha: 0, ease:Power4.easeInOut}, '+=1.5')
+            .set($h1, {y:'-=10px', x:'-=100px', text: 'For me,'})
+            .to($h1, 0.3, {y: '-=20px', autoAlpha: 1, ease:Power4.easeInOut})
+            .to($h1, 0.2, {y: '+=20px', autoAlpha: 0, ease:Power4.easeInOut}, '+=1')
+            .set($h1, {y:'-=10px', x:'+=60px', text: 'design is everything.'})
+            .to($h1, 0.3, {y: '+=20px', autoAlpha: 1, ease:Power4.easeInOut})
+            .to($h1, 0.2, {y: '+=20px', autoAlpha: 0, ease:Power4.easeInOut}, '+=1')
+            .to($stage, 0.2, {scale: 2, autoAlpha: 1, transformOrigin: 'bottom center', ease: Power0.none}, '-=0.2')
+            .to($vase, 1, {bezier:{curviness: 1, values: path}, ease: SlowMo.ease.config(0.3, 0.4, false), autoAlpha:1})
+            .to($circle, 1, {scale: 0, autoAlpha:0, transformOrigin: 'bottom center', ease: Power4.easeInOut}, '-=1')
+
+
             ;
 
 
