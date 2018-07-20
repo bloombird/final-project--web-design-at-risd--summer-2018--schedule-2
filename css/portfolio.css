@@ -96,3 +96,24 @@ a:active {
 .active{
    color: #eb9f9f !important;
 }
+
+.header{
+   width: 100px;
+   margin-left: 40px;
+}
+
+nav {
+   width: 10%;
+   float: left;
+}
+
+.content{
+   width: 90%;
+   float: left;
+}
+
+.content01{
+   width: 600px;
+   margin: 40px;
+   margin-bottom: 100px;
+}
