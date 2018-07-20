@@ -106,4 +106,14 @@ h1 {
 .fruit {
   fill: #fcf5e3; }
 
+#enter {
+  background-color: #fcf5e3;
+  color: black;
+  border: 2px solid #4CAF50;
+  font-size: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
 /*# sourceMappingURL=style.css.map */

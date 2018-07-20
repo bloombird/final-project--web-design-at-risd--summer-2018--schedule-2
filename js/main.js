@@ -2,7 +2,7 @@
 
     var $body = $('body'),
         $plant = $('#plant'),
-        path = [{x:0, y:80},{x:0, y:-180},{x:0, y:50}],
+        path = [{x:-30, y:80},{x:-30, y:-180},{x:-30, y:50}],
         $stem = $('#stemmask'),
         $h1 = $('h1'),
         $leafInsideMask01 = $('#leaf1insideMask'),
@@ -23,6 +23,7 @@
         $head = $('#head'),
         $vase = $('#vase'),
         $circle = $('#circle'),
+        $enter = $('#enter'),
 
         mainTl = new TimelineMax();
 
@@ -34,7 +35,8 @@
             .set($plant, {x:50, y:80,scale: 0.5, transformOrigin: 'center center'})
             .set($girl, {autoAlpha: 1, x: '1400%', scale: 1.3, transformOrigin: 'bottom center'})
             .set($stage, {y: 150, scale:1, autoAlpha:0})
-            .set($vase, {scale:1.5, autoAlpha:0})
+            .set($vase, {x: -30, scale:1.5, autoAlpha:0})
+            .set($enter, {autoAlpha:0})
             .set($MainMask, {attr: {x: 1458}})
 
 
@@ -56,7 +58,7 @@
         var introTL = new TimelineMax();
 
         introTL
-        .set($h1, {y: '-=100px'})
+            .set($h1, {y: '-=100px'})
             .to($girl, 0.8, {x: '40%', ease: Power4.easeInOut})
             .fromTo($h1, 0.5, {x: '-46%', autoAlpha: 0}, {x: '-80%', autoAlpha: 1})
             .fromTo($smile, 0.4, {scaleX: 0.7, transformOrigin: 'center center'}, {scaleX: 1, ease: Power4.easeInOut})
@@ -83,8 +85,11 @@
             .to($h1, 0.3, {y: '+=20px', autoAlpha: 1, ease:Power4.easeInOut})
             .to($h1, 0.2, {y: '+=20px', autoAlpha: 0, ease:Power4.easeInOut}, '+=1')
             .to($stage, 0.2, {scale: 2, autoAlpha: 1, transformOrigin: 'bottom center', ease: Power0.none}, '-=0.2')
+
             .to($vase, 1, {bezier:{curviness: 1, values: path}, ease: SlowMo.ease.config(0.3, 0.4, false), autoAlpha:1})
             .to($circle, 1, {scale: 0, autoAlpha:0, transformOrigin: 'bottom center', ease: Power4.easeInOut}, '-=1')
+            .to($enter, 0.4, {autoAlpha: 1, ease: Power0.easeInOut}, '-=0.2')
+
 
 
             ;
