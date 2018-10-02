@@ -65,12 +65,19 @@ section {
    left: 50%;
 }
 
-nav ul li{
-   line-height: 30px;
-   list-style-type: none;
+nav {
+   width: 10%;
+   position: fixed;
+   z-index: 5555;
 }
 
-li a{
+nav ul li{
+   line-height: 35px;
+   list-style-type: none;
+   font-size: 20px;
+}
+
+a{
    text-decoration: none;
 }
 
@@ -102,11 +109,7 @@ a:active {
    margin-left: 40px;
 }
 
-nav {
-   width: 10%;
-   position: fixed;
 
-}
 
 .content{
    width: 90%;
@@ -129,4 +132,22 @@ nav {
 }
 .left{
    width: 1100px;
+}
+
+.contact-img{
+   margin-left: 50px;
+   margin-top: 100px;
+   float: left;
+   width: 400px;
+}
+.contact-img img{
+   width:100%;
+}
+
+.contact-content{
+   width: 300px;
+   height: 500px;
+   float: left;
+   margin-top: 10%;
+   margin-left: 10%;
 }

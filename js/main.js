@@ -3,7 +3,7 @@
     var $body = $('body'),
         $plant = $('#plant'),
         path = [{x:-30, y:80},{x:-30, y:-180},{x:-30, y:50}],
-        $stem = $('#stemmask'),
+        $stemMask = $('#stemmask'),
         $h1 = $('h1'),
         $leafInsideMask01 = $('#leaf1insideMask'),
         $leafInsideMask02 = $('#leaf2insideMask'),
@@ -41,13 +41,13 @@
 
 
             //leaf
-            .set($leafInsideMask01, {attr: {y: 730}})
+            .set($leafInsideMask01, {attr: {y: 730, rotation: 30}})
             .set($leafInsideMask02, {attr: {y: 696}})
             .set($leafInsideMask03, {attr: {y: 605}})
             .set($leafInsideMask04, {attr: {y: 560}})
             .set($leafInsideMask05, {attr: {y: 475}})
             .set($leafInsideMask06, {attr: {y: 438}})
-            .set($stem, {attr: {y: 750}})
+            .set($stemMask, {attr: {y: 750, rotation:30}})
             ;
 
 
@@ -98,10 +98,23 @@
         return introTL;
     }
 
+    function getFillLeafTl(){
+        var fillLeafTL = new TimelineMax();
+
+        // Get path length
+        fillLeafTL
+            .to($stemMask, 2, {attr: {y:300}, ease:Power0.easeNone}, 'vase')
+            .to($leafInsideMask01, 2, {attr: {y:600}, ease:Power0.easeNone}, '-=2')
+            ;
+
+        return fillLeafTL;
+    }
+
     function init(){
         mainTl
             .add(clearStage())
-            .add(getIntroTl(), 'scene-intro');
+            .add(getIntroTl(), 'scene-intro')
+            .add(getFillLeafTl(), 'fillLeaf');
     }
     init();
 
